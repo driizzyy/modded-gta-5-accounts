@@ -196,7 +196,7 @@ function handleDiscordPurchase(event, productKey) {
     event.preventDefault();
     
     if (DISCORD_SERVER_INVITE === "https://discord.gg/55uqucry2M" || 
-        DISCORD_SERVER_INVITE.includes("YOUR_INVITE")) {
+        DISCORD_SERVER_INVITE.includes("https://discord.gg/55uqucry2M")) {
         alert("❌ Discord integration not configured yet.\n\nTo fix this:\n1. Create a Discord server\n2. Create an invite link\n3. Ask the store owner to add it to the website configuration");
         return;
     }
